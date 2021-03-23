@@ -100,7 +100,7 @@ Cars["car1"]
 #### Get keys
 ```keys(Cars)```
 
-### Get values
+#### Get values
 ```values(Cars)```
 
 Merging is done with the same as tuples
@@ -145,17 +145,21 @@ OR ```||```, AND ```&&```
 Same as every programming language in existance. (Don't take this literally please.)
 
 ### Loops
-```for i in ["aloo", "gobi", "mattar"]
+```
+for i in ["aloo", "gobi", "mattar"]
 	print(i, " "")
-end```  
+end
+```  
 This is dynamically typed, ie, i will take the dataType of what is in the list.  
 
 Similarly can be used to loop through each char of a string.  
 
 #### Looping through range  
-``` for i in 1:5
+```
+for i in 1:5
 	print(i)
-    end```  
+end
+```  
 
 ### Printing numbers between lines
 ```print("Your total sum is: $(j)")```  
@@ -191,7 +195,11 @@ and called like
 ```f(2)``` which outputs 4.  
 
 or named fucntions like  
-```function multiply(x, y)
+```
+function multiply(x, y)
 	return x*y
-  end```
+end
+```
+
+#### Default values can be supplied for variables using ```=``` in the definition  
 
