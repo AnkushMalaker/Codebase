@@ -202,4 +202,9 @@ end
 ```
 
 #### Default values can be supplied for variables using ```=``` in the definition  
-
+For example:  
+```
+function multiply(x=5, y)
+	return x*y
+end
+```
