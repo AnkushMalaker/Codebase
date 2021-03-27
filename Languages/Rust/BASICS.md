@@ -1,4 +1,4 @@
-# Basics of the rush language.  
+# Basics of the rust language.  
 
 I will be ommitting everything that's mostly common to every other programming language such as how control structures and looping constructs work.  
 
