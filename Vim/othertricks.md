@@ -3,6 +3,7 @@
 " Keybind to run compile and run current file
 nnoremap <F9> :w <CR> :!gcc "%:p" -o out -fopenmp && ./out <Enter>
 
+
 Rename current variable
 One common task is rename the variable name under cursor.
 
@@ -31,4 +32,5 @@ Taken from (this)[https://www.reddit.com/r/vim/comments/cod91w/vim_feature_simil
 
 Also apparently a lot of helpful stuff in  
 `help: sub-replace-special`  
+
 

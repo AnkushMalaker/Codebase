@@ -1,7 +1,9 @@
 # Linux tricks that I keep forgetting
 
 ### Checking file size
+
 `du` - Used to check file size  
+
 Can give 
 -h for human readable format,  
 -s for excluding subdirectories,  
@@ -11,4 +13,5 @@ Example:
 ``sudo du -h --max-depth=1 /var`  
 or,  
 `sudo du -shc /var/*`  
+
 
