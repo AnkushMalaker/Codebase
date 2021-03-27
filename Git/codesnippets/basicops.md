@@ -1,11 +1,13 @@
 # Basic operations on git
 
 ### Push 
-```git push -u <remote_name> <branch_name>```
+
+`git push -u <remote_name> <branch_name>`
 
 ### Pull
-```git pull```
+`git pull`
 
 ### Commit 
-```git commit -m "message"```
+`git commit -m "message"`
+
 
