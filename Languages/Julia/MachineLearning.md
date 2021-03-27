@@ -3,7 +3,7 @@
 ### Calling python packages  
 This can be done using PyCall package.  
 To call numpy, we do:  
-```np = pyimport("numpy")```  
+`np = pyimport("numpy")`  
 Then, use np as usual.  
 
 ### We can use skitlearn etc as usual 

@@ -14,7 +14,7 @@ Note: the word ranges are extracted from language server when possible, when lan
 
 ## Powerful substitutoin commands: 
 For replacing a variable in the whole file:  
-```:%s/```
+`:%s/`
 then hit ^R^W or ^R^R to get the word under the cursor, then finish the replacement with
 ```
 :%s/wordunderthecursor/&text to append/g
@@ -25,10 +25,10 @@ then hit ^R^W or ^R^R to get the word under the cursor, then finish the replacem
 ```  
 Alternatively, you can use * or # to search for the word under the cursor (populating the search register), then use  
 
-```:%s//replacement/g```  
+`:%s//replacement/g`  
 (leaving the pattern blank to use the pre-populated search register)
 Taken from (this)[https://www.reddit.com/r/vim/comments/cod91w/vim_feature_similar_to_ctrld_in_vscode/ewijq8o?utm_source=share&utm_medium=web2x&context=3] comment.  
 
 Also apparently a lot of helpful stuff in  
-```help: sub-replace-special```  
+`help: sub-replace-special`  
 
