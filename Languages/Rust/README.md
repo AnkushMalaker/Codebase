@@ -9,4 +9,8 @@ I'll be making notes from this book. It really should be enough to read through 
 We also have [code](https://github.com/rust-lang/book/tree/master/src) for the [book](https://doc.rust-lang.org/book/)  
 
 
-
+Stuff I need to circle back to:  
+- [ ] More on cargo
+- [ ] Automated Tests
+- [ ] Traits
+- [ ] Lifetimes
