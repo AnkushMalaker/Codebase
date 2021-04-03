@@ -1,4 +1,3 @@
 # Generic Types, Traits and Lifetimes
 
-1. Generics - Reduce code duplication with generic vals.  
-
+1. Generics - Reduce code duplication with generic vals.

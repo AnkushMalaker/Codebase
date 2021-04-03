@@ -1,3 +1,3 @@
-# Collections  
-Vectors, Strings and hashmaps, very important beacuse I use this literally everywhere.  
+# Collections
 
+Vectors, Strings and hashmaps, very important beacuse I use this literally everywhere.

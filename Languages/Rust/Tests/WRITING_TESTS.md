@@ -25,9 +25,7 @@ eq is for equality and ne for not equal.
 ## Should panic!
 
 We can check if a value that should make program panic is infact making program panic by putting `#[should_panic]` over the test function.
-The message isn't very helpful and this can be **impercise** cuz it will pass even if program panics because of some other reason.  
+The message isn't very helpful and this can be **impercise** cuz it will pass even if program panics because of some other reason.
 
 To counteract that, we add an `expected` param to `should_panic`. Ex:  
-`#[should_panic(expected = "Guess value must be less than or equal to 100")]`  
-
-
+`#[should_panic(expected = "Guess value must be less than or equal to 100")]`

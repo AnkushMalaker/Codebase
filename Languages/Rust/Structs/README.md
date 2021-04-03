@@ -1,2 +1,1 @@
-# Structs and everything  
-
+# Structs and everything

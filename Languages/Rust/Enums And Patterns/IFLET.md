@@ -1,6 +1,7 @@
 # If let
 
-Simple to understand from the syntax. It's just a more convenient way to do matching with lesser code:  
+Simple to understand from the syntax. It's just a more convenient way to do matching with lesser code:
+
 ```
 let mut count = 0;
     match coin {
@@ -8,7 +9,9 @@ let mut count = 0;
         _ => count += 1,
     }
 ```
-If let equivalent:  
+
+If let equivalent:
+
 ```
 let mut count = 0;
     if let Coin::Quarter(state) = coin {
@@ -16,6 +19,7 @@ let mut count = 0;
     } else {
         count += 1;
     }
-``` 
+```
+
 The `if let` construct reads: "if `let` destructures `coin` into
-    // `Coin::Quarter(state)`, evaluate the block (`{}`).
+// `Coin::Quarter(state)`, evaluate the block (`{}`).
