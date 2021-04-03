@@ -34,3 +34,11 @@ Also apparently a lot of helpful stuff in
 `help: sub-replace-special`  
 
 `words` can be selected using w/e/b, but `WORDS` can be selected usnig W/E/B. WORD is a non-blank space thing where as word is.. Idk how to explain. Read the docs from `:help word`
+
+- `"0` is the yank register, where removals or deletes don't interfere. 
+- `""`is the unnamed register where last yank or delete go.  
+
+To paste from register in insert mode, use `C-r` and then the register name/number.  
+
+To copy and replace, just select what you want to replace in visual mode and then `p`.  
+

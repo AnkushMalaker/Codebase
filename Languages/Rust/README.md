@@ -10,7 +10,10 @@ We also have [code](https://github.com/rust-lang/book/tree/master/src) for the [
 
 
 Stuff I need to circle back to:  
-- [ ] More on cargo
+- [x] More on crates
 - [ ] Automated Tests
 - [ ] Traits
 - [ ] Lifetimes
+
+Wow, I'm suffering because I chose to skip random things from random places. Who would've known.???
+

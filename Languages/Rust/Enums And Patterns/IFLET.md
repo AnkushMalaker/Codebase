@@ -17,4 +17,5 @@ let mut count = 0;
         count += 1;
     }
 ``` 
-
+The `if let` construct reads: "if `let` destructures `coin` into
+    // `Coin::Quarter(state)`, evaluate the block (`{}`).
