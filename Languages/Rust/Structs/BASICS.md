@@ -1,6 +1,7 @@
-# Defining and Instantiating Structs  
+# Defining and Instantiating Structs
 
-use keyword `struct` to define a struct and continue as any other language, giving the type along with it after a colon. Example:  
+use keyword `struct` to define a struct and continue as any other language, giving the type along with it after a colon. Example:
+
 ```
 struct User {
     username: String,
@@ -9,7 +10,9 @@ struct User {
     active: bool,
 }
 ```
-To use it, we have to define values for each variable in the struct as so:  
+
+To use it, we have to define values for each variable in the struct as so:
+
 ```
     let user1 = User {
         email: String::from("someone@example.com"),
@@ -24,7 +27,8 @@ Accessing values can be done by dot: `user1.email` and if mutable, we can change
 If we use a constructor like function like `build_user()` we can use field init shorthand, ie, give the variable name the same as the name in struct to auto fill it. [As opposed to doing something like `email : email`]
 
 We can create new instance with previous values and some changed using the _struct update syntax_  
-This is normal way:  
+This is normal way:
+
 ```
     let user2 = User {
         email: String::from("another@example.com"),
@@ -34,7 +38,8 @@ This is normal way:
     };
 ```
 
-This is using struct update syntax:  
+This is using struct update syntax:
+
 ```
 let user2 = User {
         email: String::from("another@example.com"),
@@ -43,16 +48,17 @@ let user2 = User {
     };
 ```
 
-## Tuple structs  
+## Tuple structs
+
 No named fields. ex:  
-`struct Color(i32, i32, i32)`  
+`struct Color(i32, i32, i32)`
 
-## Unit-like structs w/o any fields  
-This stuff will come later as its related to traits. 
-If i remember, I'll come back and add it in. 
+## Unit-like structs w/o any fields
 
-## Displaying a struct  
-Calling `println!` macro with the `{}` tells println to use the Display method. Structs dont have inbuilt display methods but we can still use `{:?}` to display their information. This uses the `Debug` trait. 
-We need to enable the debuggin for the struct explicitly using the `#[derive(Debug)]` before the struct for this to work.  
+This stuff will come later as its related to traits.
+If i remember, I'll come back and add it in.
 
+## Displaying a struct
 
+Calling `println!` macro with the `{}` tells println to use the Display method. Structs dont have inbuilt display methods but we can still use `{:?}` to display their information. This uses the `Debug` trait.
+We need to enable the debuggin for the struct explicitly using the `#[derive(Debug)]` before the struct for this to work.
