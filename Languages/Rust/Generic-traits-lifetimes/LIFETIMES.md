@@ -37,3 +37,27 @@ All the lifetime rules that rust infers is becasue its programmed into rust code
 > The compiler uses three rules to figure out what lifetimes references have when there aren’t explicit annotations. The first rule applies to input lifetimes, and the second and third rules apply to output lifetimes. If the compiler gets to the end of the three rules and there are still references for which it can’t figure out lifetimes, the compiler will stop with an error. These rules apply to fn definitions as well as impl blocks.
 
 Check the [docs](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html) to see exact rules.
+
+## Static lifetime
+
+`'static` means it can life for entire duration of program.
+
+## Specifying Generics, Traits and Lifetimes together:
+
+```
+fn longest_with_an_announcement<'a, T>(
+    x: &'a str,
+    y: &'a str,
+    ann: T,
+) -> &'a str
+where
+    T: Display,
+{
+    println!("Announcement! {}", ann);
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
+}
+```

@@ -14,3 +14,4 @@ Stuff I need to circle back to:
 - [x] Automated Tests
 - [ ] Traits
 - [x] Lifetimes
+- [ ] Closures
