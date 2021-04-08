@@ -12,7 +12,7 @@ Stuff I need to circle back to:
 
 - [x] More on crates
 - [x] Automated Tests
-- [ ] Traits
+- [x] Traits
 - [x] Lifetimes
-- [ ] Closures
+- [x] Closures
 - [ ] RefClee

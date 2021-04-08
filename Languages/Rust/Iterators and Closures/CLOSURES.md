@@ -20,4 +20,21 @@ The compiler infers the types because closures are used in small contexts. If th
 We can make a struct that holds a closure and the output.
 The `Fn` traits are provided by the standard library. All closures implement at least one of the traits: `Fn,` `FnMut,` or `FnOnce`
 
-# I think I will come back to this topic later. Gonna cache it for now.
+Best understand from example: 
+```
+struct Cacher<T>
+where
+    T: Fn(u32) -> u32,
+{
+    calculation: T,
+    value: Option<u32>,
+}
+```
+> The Cacher struct has a calculation field of the generic type T. The trait bounds on T specify that it’s a closure by using the Fn trait. Any closure we want to store in the calculation field must have one u32 parameter (specified within the parentheses after Fn) and must return a u32 (specified after the ->).
+
+
+## FnOnce, FnMut, Fn  
+- `FnOnce` consumes the variables it captures from its enclosing scope, known as the closure’s environment. To consume the captured variables, the closure must take ownership of these variables and move them into the closure when it is defined. The Once part of the name represents the fact that the closure can’t take ownership of the same variables more than once, so it can be called only once.
+- `FnMut` can change the environment because it mutably borrows values.
+- `Fn` borrows values from the environment immutably.
+

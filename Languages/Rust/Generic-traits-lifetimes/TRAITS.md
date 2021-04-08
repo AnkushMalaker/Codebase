@@ -54,12 +54,27 @@ pub fn notify(item: &impl Summary) {
 `item: &impl Summary` actaully stands for <T: Summary>(item: &T)
 
 We can employ notify to use **multiple trait bonds** using the `+` operator.  
-`pub fn notify(item: &impl Summary + Display() ){}`
+`pub fn notify(item: &(impl Summary + Display)){`
+or on generic types like:  
+`pub fn notify<T: Summary + Display>(item: &T) {`
 
 ## `Where` clause
 
-[My brain is sorta fried I don't understand this](https://doc.rust-lang.org/book/ch10-02-traits.html#clearer-trait-bounds-with-where-clauses)
+This is easier syntax to mention trait bounds for a function, ie, "allow this function to take all types that apply these traits.".
+
+So, this:
+`fn some_function<T: Display + Clone, U: Clone + Debug>(t: &T, u: &U) -> i32 {`  
+can be written as:
+
+```
+fn some_function<T, U>(t: &T, u: &U) -> i32
+    where T: Display + Clone,
+          U: Clone + Debug
+{
+```
 
 ## Returning types that implement traits
 
-Honestly, you should just read the page again. Maybe more than once. This seems to be a very important topic since it has been comping up again and again and I was pretty excited about it but this is a lot to take in, in one sitting.
+Similar to using traits as parameters, using `imp <trait name>` implies function will return some type that implements that trait.
+
+[Read again whenever you can :D](https://doc.rust-lang.org/book/ch10-02-traits.html#clearer-trait-bounds-with-where-clauses)
